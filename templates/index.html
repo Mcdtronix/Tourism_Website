@@ -287,60 +287,13 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="destination-item position-relative overflow-hidden mb-2">
                         <img class="img-fluid" src="{{dest.location_img.url}}" alt="location_image">
-                        <a class="destination-overlay text-white text-decoration-none" href="">
+                        <a class="destination-overlay text-white text-decoration-none" href="{% url 'destination' %}">
                             <h5 class="text-white">{{dest.location}}</h5>
                             <span>{{dest.sub_title}}</span>
                         </a>
                     </div>
                 </div>
                 {% endfor %}
-
-
-                {% comment %} <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="{% static 'img/destination-2.jpg' %}" alt="">
-                        <a class="destination-overlay text-white text-decoration-none" href="">
-                            <h5 class="text-white">United Kingdom</h5>
-                            <span>100 Cities</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="{% static 'img/destination-3.jpg' %}" alt="">
-                        <a class="destination-overlay text-white text-decoration-none" href="">
-                            <h5 class="text-white">Australia</h5>
-                            <span>100 Cities</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="{% static 'img/destination-4.jpg' %}" alt="">
-                        <a class="destination-overlay text-white text-decoration-none" href="">
-                            <h5 class="text-white">India</h5>
-                            <span>100 Cities</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="{% static 'img/destination-5.jpg' %}" alt="">
-                        <a class="destination-overlay text-white text-decoration-none" href="">
-                            <h5 class="text-white">South Africa</h5>
-                            <span>100 Cities</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="{% static 'img/destination-6.jpg' %}" alt="">
-                        <a class="destination-overlay text-white text-decoration-none" href="">
-                            <h5 class="text-white">Indonesia</h5>
-                            <span>100 Cities</span>
-                        </a>
-                    </div>
-                </div> {% endcomment %}
             </div>
         </div>
     </div>
@@ -405,111 +358,13 @@
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
+                                  
                                 </div>
                             </div>
                         </div>
                     </div> 
                 </div>
                 {% endfor %}
-
-
-                {% comment %} <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="package-item bg-white mb-2">
-                        <img class="img-fluid" src="{% static 'img/package-2.jpg' %}" alt="">
-                        <div class="p-4">
-                            <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
-                            </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
-                            <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="package-item bg-white mb-2">
-                        <img class="img-fluid" src="{% static 'img/package-3.jpg' %}" alt="">
-                        <div class="p-4">
-                            <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
-                            </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
-                            <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="package-item bg-white mb-2">
-                        <img class="img-fluid" src="{% static 'img/package-4.jpg' %}" alt="">
-                        <div class="p-4">
-                            <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
-                            </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
-                            <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="package-item bg-white mb-2">
-                        <img class="img-fluid" src="{% static 'img/package-5.jpg' %}" alt="">
-                        <div class="p-4">
-                            <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
-                            </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
-                            <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="package-item bg-white mb-2">
-                        <img class="img-fluid" src="{% static 'img/package-6.jpg' %}" alt="">
-                        <div class="p-4">
-                            <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
-                            </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
-                            <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                 {% endcomment %}
             </div>
         </div>
     </div>
@@ -831,7 +686,7 @@
     <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
         <div class="row">
             <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0 text-white-50">Copyright &copy; <a href="#">Domain</a>. All Rights Reserved.</a>
+                <p class="m-0 text-white-50">Copyright &copy; <a href="#">Aqi Da Great</a>. All Rights Reserved.</a>
                 </p>
             </div>
             <div class="col-lg-6 text-center text-md-right">
@@ -848,8 +703,8 @@
 
 
     <!-- JavaScript Libraries -->
-    <script src="{% static 'https://code.jquery.com/jquery-3.4.1.min.js' %}"></script>
-    <script src="{% static 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="{% static 'lib/easing/easing.min.js' %}"></script>
     <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
     <script src="{% static 'lib/tempusdominus/js/moment.min.js' %}"></script>

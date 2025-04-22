@@ -1,5 +1,5 @@
 from django.contrib import admin
-from . models import Header, About, About_Subsection, Service, Destination ,Packages, HeaderImages
+from . models import Header, About, Feature, Service, Destination ,Packages, HeaderImages
 
 # Register your models here.
 @admin.register(Header)
@@ -12,8 +12,8 @@ class HeaderAdmin(admin.ModelAdmin):
 class AboutAdmin(admin.ModelAdmin):
     list_display = ('section_title', 'description')
 
-@admin.register(About_Subsection)
-class About_SubsectionAdmin(admin.ModelAdmin):
+@admin.register(Feature)
+class FeatureAdmin(admin.ModelAdmin):
     list_display = ('section_title', 'icon', 'description')
 
 @admin.register(Service)

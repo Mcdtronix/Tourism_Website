@@ -22,7 +22,7 @@ class About(models.Model):
     def __str__(self):
         return f"{self.section_title} - {self.description}"
     
-class About_Subsection(models.Model):
+class Feature(models.Model):
     section_title = models.CharField(max_length=50)
     icon = models.CharField(max_length=255, help_text='should be in form of a string')
     description = models.TextField()
