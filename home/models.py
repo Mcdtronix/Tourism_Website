@@ -11,6 +11,9 @@ class Header (models.Model):
 class HeaderImages(models.Model):
     header_img = models.ImageField(upload_to='Assets/header-Images')
 
+    def __str__(self):
+        return f"{self.header_img}"
+
     
 class About(models.Model):
     main_img = models.ImageField(upload_to='Assets/About-Images')
