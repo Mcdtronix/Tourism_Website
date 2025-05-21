@@ -80,7 +80,7 @@
                         <a href="{% url 'about' %}" class="nav-item nav-link active">About</a>
                         <a href="{% url 'service' %}" class="nav-item nav-link">Services</a>
                         <a href="{% url 'package' %}" class="nav-item nav-link">Tour Packages</a>
-                        <div class="nav-item dropdown">
+                        {% comment %} <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu border-0 rounded-0 m-0">
                                 <a href="{% static 'blog.html' %}" class="dropdown-item">Blog Grid</a>
@@ -89,7 +89,7 @@
                                 <a href="{% static 'guide.html' %}" class="dropdown-item">Travel Guides</a>
                                 <a href="{% static 'testimonial.html' %}" class="dropdown-item">Testimonial</a>
                             </div>
-                        </div>
+                        </div> {% endcomment %}
                         <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
@@ -262,34 +262,6 @@
                         <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Etsea et sit dolor amet ipsum</li>
                         <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Diam dolor diam elitripsum vero.</li>
                     </ul>
-                </div>
-                <div class="col-lg-5">
-                    <div class="card border-0">
-                        <div class="card-header bg-primary text-center p-4">
-                            <h1 class="text-white m-0">Sign Up Now</h1>
-                        </div>
-                        <div class="card-body rounded-bottom bg-white p-5">
-                            <form>
-                                <div class="form-group">
-                                    <input type="text" class="form-control p-4" placeholder="Your name" required="required" />
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control p-4" placeholder="Your email" required="required" />
-                                </div>
-                                <div class="form-group">
-                                    <select class="custom-select px-4" style="height: 47px;">
-                                        <option selected>Select a destination</option>
-                                        <option value="1">destination 1</option>
-                                        <option value="2">destination 1</option>
-                                        <option value="3">destination 1</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <button class="btn btn-primary btn-block py-3" type="submit">Sign Up Now</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

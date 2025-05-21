@@ -80,7 +80,7 @@
                         <a href="{% url 'about' %}" class="nav-item nav-link">About</a>
                         <a href="{% url 'service' %}" class="nav-item nav-link">Services</a>
                         <a href="{% url 'package' %}" class="nav-item nav-link active">Tour Packages</a>
-                        <div class="nav-item dropdown">
+                        {% comment %} <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu border-0 rounded-0 m-0">
                                 <a href="{% static 'blog.html' %}" class="dropdown-item">Blog Grid</a>
@@ -89,7 +89,7 @@
                                 <a href="{% static 'guide.html' %}" class="dropdown-item">Travel Guides</a>
                                 <a href="{% static 'testimonial.html' %}" class="dropdown-item">Testimonial</a>
                             </div>
-                        </div>
+                        </div> {% endcomment %}
                         <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
